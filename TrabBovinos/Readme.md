@@ -13,3 +13,7 @@
 * //460 a 500kg      /16
 * Vaca parida=True   /15
 
+## 🛠 Technologies
+- Java
+## 💛 Contact
+antoniol.carvalho49@gmail.com
