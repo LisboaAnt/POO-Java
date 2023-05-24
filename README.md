@@ -1,5 +1,5 @@
 # POO-Java
-Curso de POO com java, Curso em vídeo
+Curso de POO com java, Curso em vídeo, e faculdade
 
 ## 🛠 Technologies
 
