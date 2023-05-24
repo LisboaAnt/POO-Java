@@ -21,16 +21,17 @@ public class Carreta {
                 float pesos = 0;
                 float TempMedia = 0;
                 boolean teste = true;
-                int ii = 0;
+                int quantidadePorViagem = 0;
                 do{
                     quant++;
-                    quantList--;
+                    quantList--; //Contador para parar quando a lista não tiver mais bois
+                    
                     //Calcular a media 
                     pesos += AuxlistBov[i].getPeso();
                     ++i;
-                    ++ii;
-                    TempMedia = pesos/ii;
-                    if(quantList == 0){teste = false;}
+                    ++quantidadePorViagem; //Soma a cada boi adicionado
+                    TempMedia = pesos/quantidadePorViagem; //calcula a media com o proximo boi
+                    if(quantList == 0){teste = false;}// faz dar falso se acabar os bois que estão na lista
 
                 }while(teste&&(
                            (160 <= TempMedia && TempMedia < 200 && quant <40)
@@ -46,14 +47,13 @@ public class Carreta {
             System.out.println("Viagem: "+ this.QuantCarreta+" Peso: "+pesos);
         }
         System.out.println("Carretas necessarias: "+this.QuantCarreta);
-    //Quantas carretas são necessarias?
-    //Passar de uma lista para outra
-    //Print numero de carretas necessarias
-    
+
+        
+    //Passa o gado de uma lista pra outra
     fa2.setListaBovina(fa1.getListaBovina());
-    Bovino lll[] = new Bovino[50];
-    fa1.setListaBovina(lll);
-        System.out.println("Numero do peso total");
+    Bovino arrayAUX[] = new Bovino[50];
+    fa1.setListaBovina(arrayAUX);
+
     }
     
 }
