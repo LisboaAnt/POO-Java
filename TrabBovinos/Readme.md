@@ -13,6 +13,9 @@
 * //460 a 500kg      /16
 * Vaca parida=True   /15
 
+## Link de acesso
+ -https://github.com/LisboaAnt/POO-Java/tree/main/TrabBovinos
+
 ## 🛠 Technologies
 - Java
 ## 💛 Contact
