@@ -1,5 +1,6 @@
 !Objetivos:
-Fazer um programa com os Objetos: Carreta 
+Fazer um programa com os Objetos: Carreta, Bovino, Fazenda.
+//Cada fazenda tem um array de Bovino, o objetivo é com os seguintes criterios fazer a carreta levar os bovinos na ordem preestabelecida.
 //fazenda1 para a fazenda2 passando pelos seguintes criterios:                                                
 //O comminhão só pode levar seguindo a logica:
 //Media de Peso    / Quantidade de vacas 
