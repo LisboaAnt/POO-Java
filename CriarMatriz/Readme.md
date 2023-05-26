@@ -1,6 +1,6 @@
 ## !Objetivos:
 > Crie uma matriz 10x10 que represente Robopólis.
-Em cada elemento dessa matriz é possível adicionar uma “carga” ou “bomba”.
+Em cada elemento dessa matriz é possível adicionar uma (1)“carga” ou (-1)“bomba”.
 Ao todo temos 20 cargas e 5 bombas espalhadas aleatoriamente por Robópolis.
                                                 
 ## Link de acesso
