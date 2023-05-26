@@ -2,7 +2,7 @@
 > Faça uma classe que codifique uma String e outra que descodifique.
                                                 
 ## Link de acesso
- -https://github.com/LisboaAnt/POO-Java/tree/main/CriarMatriz
+ -https://github.com/LisboaAnt/POO-Java/tree/main/TabelaAscii
 
 ## 🛠 Technologies
 - Java
