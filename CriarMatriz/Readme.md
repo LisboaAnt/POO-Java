@@ -1,7 +1,8 @@
 ## !Objetivos:
-> Fazer um programa com os Objetos: Carreta, Bovino, Fazenda.
--Cada fazenda tem um array de Bovino, o objetivo é com os seguintes criterios fazer a carreta levar os bovinos na ordem preestabelecida.
--fazenda1 para a fazenda2 passando pelos seguintes criterios:                                                
+> Crie uma matriz 10x10 que represente Robopólis.
+Em cada elemento dessa matriz é possível adicionar uma “carga” ou “bomba”.
+Ao todo temos 20 cargas e 5 bombas espalhadas aleatoriamente por Robópolis.
+                                                
 -A carreta só pode levar seguindo a logica:
 * //Media de Peso    / Quantidade de vacas 
 * //160 a 200kg      /40
