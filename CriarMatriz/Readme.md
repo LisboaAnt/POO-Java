@@ -1,7 +1,5 @@
 ## !Objetivos:
-> Crie uma matriz 10x10 que represente Robopólis.
-Em cada elemento dessa matriz é possível adicionar uma (1)“carga” ou (-1)“bomba”.
-Ao todo temos 20 cargas e 5 bombas espalhadas aleatoriamente por Robópolis.
+> Faça uma classe que codifique uma String e outra que descodifique.
                                                 
 ## Link de acesso
  -https://github.com/LisboaAnt/POO-Java/tree/main/CriarMatriz
