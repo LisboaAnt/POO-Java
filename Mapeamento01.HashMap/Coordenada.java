@@ -1,11 +1,15 @@
-package mapeamento01;
+
 import java.util.*;
-public class localizacao {
+public class Coordenada {
     
     private float latitude;
     private float longitude;
 
-    public localizacao(float latitude, float longitude) {
+    public Coordenada() {
+    }
+    
+    
+    public Coordenada(float latitude, float longitude) {
         this.latitude = latitude;
         this.longitude = longitude;
     }
@@ -37,7 +41,7 @@ public class localizacao {
         if (obj == null || getClass() != obj.getClass()) {
             return false;
         }
-        localizacao other = (localizacao) obj;
+        Coordenada other = (Coordenada) obj;
         return Float.compare(other.latitude, latitude) == 0 &&
                 Float.compare(other.longitude, longitude) == 0;
     }
