@@ -1,12 +1,12 @@
-
 import java.util.*;
-
 public class LocaisTuristicos {
-    
     private String pais;
     
-    HashMap <Coordenada,Local>locaisTuristicos = new HashMap();
+    HashMap <Coordenada,Local>locaisTuristicos;
     
+    public LocaisTuristicos(){
+        this.locaisTuristicos = new <Coordenada,Local>HashMap();
+    }
     
     public void setLocalTuristico(Local x){
         this.locaisTuristicos.put(x.getCoordenada(),x);
@@ -35,6 +35,4 @@ public class LocaisTuristicos {
     public void setLocaisTuristicos(HashMap<Coordenada, Local> locaisTuristicos) {
         this.locaisTuristicos = locaisTuristicos;
     }
-
-    
 }

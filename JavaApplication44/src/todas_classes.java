@@ -1,6 +1,45 @@
-
 import java.util.*;
-public class Coordenada {
+class LocaisTuristicos {
+    private String pais;
+    
+    HashMap <Coordenada,Local>locaisTuristicos;
+    
+    public LocaisTuristicos(){
+        this.locaisTuristicos = new <Coordenada,Local>HashMap();
+    }
+    
+    public void setLocalTuristico(Local x){
+        this.locaisTuristicos.put(x.getCoordenada(),x);
+        
+    }
+    
+    public Local getLocalTuristico(Local x){
+        if(this.locaisTuristicos.containsKey(x.getCoordenada())){
+            return this.locaisTuristicos.get(x.getCoordenada());
+        }else{System.out.println("Nao tem nenhuma atracao nesse ponto");}
+    return null;
+    }
+
+    public String getPais() {
+        return pais;
+    }
+
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
+
+    public HashMap<Coordenada, Local> getLocaisTuristicos() {
+        return locaisTuristicos;
+    }
+
+    public void setLocaisTuristicos(HashMap<Coordenada, Local> locaisTuristicos) {
+        this.locaisTuristicos = locaisTuristicos;
+    }
+}
+
+
+
+class Coordenada {
     
     private float latitude;
     private float longitude;
@@ -54,32 +93,22 @@ public class Coordenada {
 }
 
 
-
-public class Local {
+class Local {
     private Coordenada coordenada;
     private String nome;
     private String cidade;
     private String pais;
     private String descricao;
     
+    public Local(){}
     
     public Local(float x, float y, String pais, String cidade, String nome, String descricao) {
         this.descricao = descricao;
         this.nome = nome;
         this.cidade = cidade;
         this.pais = pais;
-        this.coordenada = new Coordenada(x, y); // Passando os valores de latitude e longitude ao construtor
+        this.coordenada = new Coordenada((float)x, (float)y); // Passando os valores de latitude e longitude ao construtor
     }
-
-    @Override
-    public String toString() {
-        return "Monumento{" + "Latitude =" + coordenada.getLatitude() + ", Longitude =" + coordenada.getLongitude() + ", nome= " + nome + '}';
-    }
-
-    public Coordenada getLoc() {
-        return coordenada;
-    }
-
     public Coordenada getCoordenada() {
         return coordenada;
     }
@@ -119,46 +148,9 @@ public class Local {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
-}
 
-
-
-
-public class LocaisTuristicos {
-    
-    private String pais;
-    
-    HashMap <Coordenada,Local>locaisTuristicos = new HashMap();
-    
-    
-    public void addHashMap(float x, float y, String pais, String cidade, String nome, String descricao){
-        Local mon = new Local(x,y,pais,cidade,nome,descricao);
-        this.locaisTuristicos.put(mon.getLoc(),mon);
-        
+    @Override
+    public String toString() {
+        return "Local{" + "coordenada=" + coordenada.getLatitude()+";"+coordenada.getLongitude() + ", nome=" + nome + ", cidade=" + cidade + ", pais=" + pais + ", descricao=" + descricao + '}';
     }
-    
-    public void busHasMap(float x,float y){
-        Coordenada coordenada = new Coordenada(x,y); 
-        if(this.locaisTuristicos.containsKey(coordenada)){
-            System.out.println(this.locaisTuristicos.get(coordenada).toString());
-        }else{System.out.println("Nao tem nenhuma atracao nesse ponto");}
-    }
-
-    public String getPais() {
-        return pais;
-    }
-
-    public void setPais(String pais) {
-        this.pais = pais;
-    }
-
-    public HashMap<Coordenada, Local> getLocaisTuristicos() {
-        return locaisTuristicos;
-    }
-
-    public void setLocaisTuristicos(HashMap<Coordenada, Local> locaisTuristicos) {
-        this.locaisTuristicos = locaisTuristicos;
-    }
-
-    
 }
