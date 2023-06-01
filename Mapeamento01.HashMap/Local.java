@@ -13,16 +13,6 @@ public class Local {
         this.pais = pais;
         this.coordenada = new Coordenada((float)x, (float)y); // Passando os valores de latitude e longitude ao construtor
     }
-
-    @Override
-    public String toString() {
-        return "Monumento{" + "Latitude =" + coordenada.getLatitude() + ", Longitude =" + coordenada.getLongitude() + ", nome= " + nome + '}';
-    }
-
-    public Coordenada getLoc() {
-        return coordenada;
-    }
-
     public Coordenada getCoordenada() {
         return coordenada;
     }
@@ -62,5 +52,11 @@ public class Local {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
+    @Override
+    public String toString() {
+        return "Local{" + "coordenada=" + coordenada.getLatitude()+";"+coordenada.getLongitude() + ", nome=" + nome + ", cidade=" + cidade + ", pais=" + pais + ", descricao=" + descricao + '}';
+    }
+    
     
 }
