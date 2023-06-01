@@ -8,17 +8,16 @@ public class LocaisTuristicos {
     HashMap <Coordenada,Local>locaisTuristicos = new HashMap();
     
     
-    public void addHashMap(float x, float y, String pais, String cidade, String nome, String descricao){
-        Local mon = new Local(x,y,pais,cidade,nome,descricao);
-        this.locaisTuristicos.put(mon.getLoc(),mon);
+    public void setLocalTuristico(Local x){
+        this.locaisTuristicos.put(x.getCoordenada(),x);
         
     }
     
-    public void busHasMap(float x,float y){
-        Coordenada coordenada = new Coordenada(x,y); 
-        if(this.locaisTuristicos.containsKey(coordenada)){
-            System.out.println(this.locaisTuristicos.get(coordenada).toString());
+    public Local getLocalTuristico(Local x){
+        if(this.locaisTuristicos.containsKey(x.getCoordenada())){
+            return this.locaisTuristicos.get(x.getCoordenada());
         }else{System.out.println("Nao tem nenhuma atracao nesse ponto");}
+    return null;
     }
 
     public String getPais() {
