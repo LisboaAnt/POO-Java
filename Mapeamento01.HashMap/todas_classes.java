@@ -46,13 +46,16 @@ class Coordenada {
 
     public Coordenada() {
     }
-    
-    
+   
     public Coordenada(float latitude, float longitude) {
         this.latitude = latitude;
         this.longitude = longitude;
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 9e0774915a25d4534308850f8b0686d6375880c1
     public float getLatitude() {
         return latitude;
     }
