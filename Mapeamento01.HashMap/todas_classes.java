@@ -52,9 +52,6 @@ class Coordenada {
         this.latitude = latitude;
         this.longitude = longitude;
     }
-    
-
-
 
     public float getLatitude() {
         return latitude;

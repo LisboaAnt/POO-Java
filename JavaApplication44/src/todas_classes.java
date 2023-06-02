@@ -2,11 +2,7 @@ import java.util.*;
 class LocaisTuristicos {
     private String pais;
     
-    HashMap <Coordenada,Local>locaisTuristicos;
-    
-    public LocaisTuristicos(){
-        this.locaisTuristicos = new <Coordenada,Local>HashMap();
-    }
+    HashMap <Coordenada,Local>locaisTuristicos = new <Coordenada,Local>HashMap();
     
     public void setLocalTuristico(Local x){
         this.locaisTuristicos.put(x.getCoordenada(),x);
@@ -44,18 +40,6 @@ class Coordenada {
     private float latitude;
     private float longitude;
 
-    public Coordenada() {
-    }
-    
-    
-    public Coordenada(float latitude, float longitude) {
-        this.latitude = latitude;
-        this.longitude = longitude;
-    }
-    
-
-
-
     public float getLatitude() {
         return latitude;
     }
@@ -72,7 +56,6 @@ class Coordenada {
         this.longitude = longitude;
     }
 
-    @Override
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
@@ -85,8 +68,6 @@ class Coordenada {
                 Float.compare(other.longitude, longitude) == 0;
     }
 
-
-    @Override
     public int hashCode() {
         return Objects.hash(latitude, longitude);
     }
@@ -99,16 +80,8 @@ class Local {
     private String cidade;
     private String pais;
     private String descricao;
-    
-    public Local(){}
-    
-    public Local(float x, float y, String pais, String cidade, String nome, String descricao) {
-        this.descricao = descricao;
-        this.nome = nome;
-        this.cidade = cidade;
-        this.pais = pais;
-        this.coordenada = new Coordenada((float)x, (float)y); // Passando os valores de latitude e longitude ao construtor
-    }
+      
+
     public Coordenada getCoordenada() {
         return coordenada;
     }
@@ -149,7 +122,6 @@ class Local {
         this.descricao = descricao;
     }
 
-    @Override
     public String toString() {
         return "Local{" + "coordenada=" + coordenada.getLatitude()+";"+coordenada.getLongitude() + ", nome=" + nome + ", cidade=" + cidade + ", pais=" + pais + ", descricao=" + descricao + '}';
     }
